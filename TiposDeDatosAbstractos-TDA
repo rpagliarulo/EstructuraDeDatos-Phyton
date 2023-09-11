@@ -1,0 +1,28 @@
+class Empleado:
+  def __init__ (self, nombre, apellido, dni):
+    self.__nombre= nombre
+    self.__apellido= apellido
+    self.__dni= dni
+
+ def __repr__(self):
+  return self.__nombre+" "+self.__apellido+" "+str(self.__dni)
+
+ def getNombre(self):
+  return self.__nombre
+#--retorna el nombre del mayor de los dos
+ def mayorEmpleado(self, self.empleado2):
+  nombreMayor= self.__nombre
+  if self.__dni > e2.__dni:
+    nombreMayor= e2.__nombre
+    return nombreMayor
+
+#--lado usuario --
+empleado1= Empleado("Mario", "Gonz{alez", 45212111)
+#doble guion para restringir accfeso
+#de todas formas no se puede accceder conceptualmente a print.(empleado1.nombre)
+print(Empleado.getNombre(empleado1))
+print(empleado1.getNombre())
+
+empleado2= Empleado("Juan", "Pérez", 23587451)
+print(empleado1.mayorEmpleado(empleado2)) 
+print(Empleado.mayorEmpleado(empleado1, empleado2))
